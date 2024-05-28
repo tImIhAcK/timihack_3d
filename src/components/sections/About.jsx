@@ -3,6 +3,7 @@ import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 import { config } from "../../utils/config";
 import HeaderOfComponent from "../../layouts/HeaderOfComponent";
+import { styles } from "../../utils/styles";
 
 const InfoCard = ({ id, count, desc }) => (
   <Tilt
@@ -30,14 +31,18 @@ const InfoCard = ({ id, count, desc }) => (
         {count}
         <span className="text-[#ff157c]">+</span>
       </h3>
-      <span className="md:text-base text-sm">{desc}</span>
+      <span className="md:text-base text-sm text-white">{desc}</span>
     </motion.div>
   </Tilt>
 );
 
 const About = () => {
   return (
-    <section name="about" id="about" className="py-10 text-white">
+    <section
+      name="about"
+      id="about"
+      className={`${styles.padding} relative z-0 mx-auto max-w-7xl`}
+    >
       <div className="text-center mt-16">
         <HeaderOfComponent
           h3={config.sections.about.h3}
@@ -55,7 +60,7 @@ const About = () => {
                   hidden: { opacity: 0, y: -50 },
                   visible: { opacity: 1, y: 0 },
                 }}
-                className="text-justify leading-10 text-2xl"
+                className="text-justify leading-10 text-2xl text-white"
               >
                 {config.sections.about.content}
               </motion.p>

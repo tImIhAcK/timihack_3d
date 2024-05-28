@@ -25,23 +25,23 @@ const Navbar = () => {
     <>
       <nav
         className={` ${styles.paddingX} top-0 left-0 z-[999] ${
-          sticky ? "bg-[#365c7645] w-full fixed" : "bg-transparent"
+          sticky
+            ? "bg-[#365c7645] w-full flex py-5 items-center fixed"
+            : "bg-transparent"
         }`}
       >
-        <div className="flex w-full items-center justify-between">
-          <div className="mx-7">
-            <Link
-              to="/"
-              className="flex items-center gap-2"
-              onClick={() => {
-                window.scrollTo(0, 0);
-              }}
-            >
-              <h4 className="text-4xl font-signature font-bold cursor-pointer text-white">
-                tim<span className="text-[#ff157c]">ih</span>ack
-              </h4>
-            </Link>
-          </div>
+        <div className="flex w-full mx-auto max-w-7xl items-center justify-between">
+          <Link
+            to="/"
+            className="flex items-center gap-2"
+            onClick={() => {
+              window.scrollTo(0, 0);
+            }}
+          >
+            <h4 className="text-4xl font-signature font-bold cursor-pointer text-white">
+              tim<span className="text-[#ff157c]">ih</span>ack
+            </h4>
+          </Link>
           <div className="md:block hidden px-7 py-2">
             <ul className="flex items-center gap-1 py-2 text-lg">
               {navLinks.map(({ id, link }) => (

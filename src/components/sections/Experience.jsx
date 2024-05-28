@@ -9,6 +9,7 @@ import "react-vertical-timeline-component/style.min.css";
 import { config } from "../../utils/config";
 import HeaderOfComponent from "../../layouts/HeaderOfComponent";
 import { experiences } from "../../utils";
+import { styles } from "../../utils/styles";
 
 const ExperienceCard = (experience) => {
   return (
@@ -55,7 +56,11 @@ const ExperienceCard = (experience) => {
 };
 
 const Experience = () => (
-  <section name="experience" id="experience" className="py-10 text-white">
+  <section
+    name="experience"
+    id="experience"
+    className={`${styles.padding} relative z-0 mx-auto max-w-7xl`}
+  >
     <div className="text-center mt-16">
       <HeaderOfComponent
         h3={config.sections.experience.h3}
