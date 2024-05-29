@@ -25,7 +25,7 @@ const InfoCard = ({ id, count, desc }) => (
         hidden: { opacity: 0, y: 50 },
         visible: { opacity: 1, y: 0 },
       }}
-      className="border-2 border-[#ff157c] relative min-w-[10rem] max-w-[16rem] bg-transparent p-3 rounded-xl"
+      className="border-2 border-[#ff157c] relative bg-transparent p-3 rounded-xl"
     >
       <h3 className="md:text-4xl text-2xl font-semibold text-white">
         {count}
