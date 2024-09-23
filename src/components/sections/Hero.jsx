@@ -53,7 +53,7 @@ const Hero = () => {
             animate="visible"
             variants={variants}
           >
-            <span className="font-signature">Hola</span>, I am{" "}
+            <span className="font-signature">Hola</span>, I am{" "}<br />
             <span className="text-[#915EFF]">{config.hero.name}</span>
           </motion.h1>
           <p className={`${styles.heroSubText} text-white-100 mt-2`}>
