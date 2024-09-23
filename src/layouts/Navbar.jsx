@@ -26,7 +26,7 @@ const Navbar = () => {
       <nav
         className={` ${styles.paddingX} top-0 left-0 z-[999] ${
           sticky
-            ? "bg-[#365c7645] w-full flex py-5 items-center fixed"
+            ? "bg-[#365c7645] w-full flex py-2 items-center fixed"
             : "bg-transparent"
         }`}
       >

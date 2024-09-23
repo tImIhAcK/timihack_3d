@@ -60,6 +60,10 @@ export const config = {
       h4: "What I have done so far",
       h3: ["Work", "Experience"],
     },
+    tech: {
+      h3: ["My", "Skills"],
+      h4: "Technologies I Use"
+    },
     feedbacks: {
       p: "What others say",
       h2: "Testimonials.",

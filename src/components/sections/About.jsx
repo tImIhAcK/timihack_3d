@@ -60,7 +60,7 @@ const About = () => {
                   hidden: { opacity: 0, y: -50 },
                   visible: { opacity: 1, y: 0 },
                 }}
-                className="text-justify leading-10 text-2xl text-white"
+                className="text-justify md:text-2xl md:leading-10 text-white"
               >
                 {config.sections.about.content}
               </motion.p>

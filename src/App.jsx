@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
 import Navbar from "./layouts/Navbar";
-import { Hero, About, Experience } from "./components";
+import { Hero, About, Experience, Tech } from "./components";
 
 const App = () => {
   return (
@@ -13,6 +13,7 @@ const App = () => {
         </div>
         <About />
         <Experience />
+        <Tech />
       </div>
     </BrowserRouter>
   );
